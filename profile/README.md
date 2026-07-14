@@ -52,7 +52,7 @@ and historical odds with closing lines.
 | [SharpAPI-TS](https://github.com/Sharp-API/SharpAPI-TS) | Official TypeScript/JavaScript SDK (`@sharp-api/client` on npm) |
 | [SharpAPI-Python](https://github.com/Sharp-API/SharpAPI-Python) | Official Python SDK (`sharpapi` on PyPI) |
 | [SharpAPI-Documentation](https://github.com/Sharp-API/SharpAPI-Documentation) | Source of [docs.sharpapi.io](https://docs.sharpapi.io) (EN, DE, ES, PT-BR) |
-| [sports-odds-sample-data](https://github.com/Sharp-API/sports-odds-sample-data) | Free odds dataset: 2026 FIFA World Cup + MLB snapshots, 20 books, CC BY 4.0 |
+| [sports-odds-sample-data](https://github.com/Sharp-API/sports-odds-sample-data) | Free odds dataset: 2026 FIFA World Cup + MLB, 23 sources (sportsbooks + prediction markets), CC BY 4.0 |
 | [sharpapi-r](https://github.com/Sharp-API/sharpapi-r) | R client, CRAN submission in progress |
 
 ## Data, if you just want data
