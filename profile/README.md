@@ -6,8 +6,8 @@
 
 **The real-time sports betting odds API for developers.**
 
-Live odds from 45+ US sportsbooks in one normalized schema, with built-in no-vig fair odds,
-+EV and arbitrage detection, and sub-89ms P50 SSE streaming.
+Build with live odds, fair probabilities, and betting opportunities from 45+ sportsbooks.
+Access normalized data through our SDKs, REST API, or real-time streams.
 
 [![PyPI](https://img.shields.io/pypi/v/sharpapi?label=pypi%20sharpapi&color=06b6d4)](https://pypi.org/project/sharpapi/)
 [![npm](https://img.shields.io/npm/v/%40sharp-api%2Fclient?label=npm%20%40sharp-api%2Fclient&color=06b6d4)](https://www.npmjs.com/package/@sharp-api/client)
@@ -17,6 +17,10 @@ Live odds from 45+ US sportsbooks in one normalized schema, with built-in no-vig
 [Website](https://sharpapi.io) · [Documentation](https://docs.sharpapi.io) · [Pricing](https://sharpapi.io/pricing) · [Discord](https://discord.com/invite/vz3yX5dJpv) · [X](https://x.com/Sharp_API)
 
 </div>
+
+**[Get a free API key](https://sharpapi.io/pricing)** · [Read the documentation](https://docs.sharpapi.io)
+
+The free tier includes DraftKings and FanDuel. No credit card required.
 
 ## Quick start
 
@@ -29,15 +33,19 @@ pip install sharpapi                 # Python
 import { SharpAPI } from '@sharp-api/client'
 
 const api = new SharpAPI('sk_live_...')
-const { data: odds } = await api.odds.get({ league: 'nba' })
-const { data: arbs } = await api.arbitrage.get({ min_profit: 1 })
+const { data: odds } = await api.odds.get({
+  sportsbook: 'draftkings',
+  league: 'nba',
+})
+console.log(odds)
 ```
 
 ```python
 from sharpapi import SharpAPI
 
-client = SharpAPI("sk_live_...")  # free key at sharpapi.io
-evs = client.ev.get(min_ev=3.0, sport="basketball")
+client = SharpAPI("sk_live_...")
+odds = client.odds.get(sportsbook="draftkings", league="nba")
+print(odds.data)
 ```
 
 `GET /odds` returns paginated odds across supported sportsbooks and markets in one
@@ -48,13 +56,15 @@ and historical odds with closing lines.
 
 ## Repositories
 
-| Repo | What it is |
+| Repository | Description |
 |---|---|
-| [SharpAPI-TS](https://github.com/Sharp-API/SharpAPI-TS) | Official TypeScript/JavaScript SDK (`@sharp-api/client` on npm) |
-| [SharpAPI-Python](https://github.com/Sharp-API/SharpAPI-Python) | Official Python SDK (`sharpapi` on PyPI) |
-| [Documentation](https://docs.sharpapi.io) | API reference and guides (EN, DE, ES, PT-BR) |
-| [SharpAPI-Sample-Data](https://github.com/Sharp-API/SharpAPI-Sample-Data) | Free odds dataset: 2026 FIFA World Cup + MLB, 23 sources (sportsbooks + prediction markets), CC BY 4.0 |
-| [SharpAPI-R](https://github.com/Sharp-API/SharpAPI-R) | R client, CRAN submission in progress |
+| [SharpAPI-Python](https://github.com/Sharp-API/SharpAPI-Python) | Python SDK · `pip install sharpapi` |
+| [SharpAPI-TS](https://github.com/Sharp-API/SharpAPI-TS) | TypeScript / JavaScript SDK · `@sharp-api/client` |
+| [SharpAPI-MCP](https://github.com/Sharp-API/SharpAPI-MCP) | MCP server for compatible AI applications |
+| [SharpAPI-R](https://github.com/Sharp-API/SharpAPI-R) | R client · submitted to CRAN, review pending |
+| [SharpAPI-Sample-Data](https://github.com/Sharp-API/SharpAPI-Sample-Data) | World Cup and MLB odds samples · CC BY 4.0 |
+
+[API reference and guides](https://docs.sharpapi.io) · Available in English, German, Spanish, and Brazilian Portuguese.
 
 ## Sample datasets
 
