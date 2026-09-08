@@ -54,6 +54,17 @@ serves pre-computed opportunities: `/opportunities/ev` (Pinnacle no-vig referenc
 `/opportunities/arbitrage`, and `/opportunities/middles`, plus player props, game state,
 and historical odds with closing lines.
 
+## Try the odds comparison demo
+
+Compare DraftKings and FanDuel pre-match moneylines in a browser app, with
+best-price highlighting and American or decimal odds. Run it locally with a free
+API key, or explore clearly labeled synthetic sample data without a key.
+
+**[Run the demo →](https://github.com/Sharp-API/SharpAPI-TS/tree/main/examples/odds-comparison)** · [See the screenshot](https://github.com/Sharp-API/SharpAPI-TS/blob/main/examples/odds-comparison/screenshot.png)
+
+Includes setup instructions for Windows, macOS, and Linux. Your API key stays on
+the local server.
+
 ## Repositories
 
 | Repository | Description |
