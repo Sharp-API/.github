@@ -1,0 +1,9 @@
+{
+  "config": {
+    "default": true,
+    // The profile uses long badge URLs, repository tables, and an HTML header.
+    "MD013": false,
+    "MD033": { "allowed_elements": ["div", "a", "img", "sub"] },
+    "MD041": false
+  }
+}

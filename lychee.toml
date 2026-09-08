@@ -1,0 +1,10 @@
+no_progress = true
+timeout = 20
+max_retries = 2
+retry_wait_time = 2
+max_concurrency = 4
+max_redirects = 5
+
+# All current public links pass without exceptions. If a hosted runner hits an
+# anti-bot challenge, document the failing URL before adding an exact exception
+# or a same-resource API remap. Do not accept all 403/429 responses globally.

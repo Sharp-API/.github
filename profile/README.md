@@ -51,13 +51,13 @@ and historical odds with closing lines.
 |---|---|
 | [SharpAPI-TS](https://github.com/Sharp-API/SharpAPI-TS) | Official TypeScript/JavaScript SDK (`@sharp-api/client` on npm) |
 | [SharpAPI-Python](https://github.com/Sharp-API/SharpAPI-Python) | Official Python SDK (`sharpapi` on PyPI) |
-| [SharpAPI-Documentation](https://github.com/Sharp-API/SharpAPI-Documentation) | Source of [docs.sharpapi.io](https://docs.sharpapi.io) (EN, DE, ES, PT-BR) |
-| [sports-odds-sample-data](https://github.com/Sharp-API/sports-odds-sample-data) | Free odds dataset: 2026 FIFA World Cup + MLB, 23 sources (sportsbooks + prediction markets), CC BY 4.0 |
-| [sharpapi-r](https://github.com/Sharp-API/sharpapi-r) | R client, CRAN submission in progress |
+| [Documentation](https://docs.sharpapi.io) | API reference and guides (EN, DE, ES, PT-BR) |
+| [SharpAPI-Sample-Data](https://github.com/Sharp-API/SharpAPI-Sample-Data) | Free odds dataset: 2026 FIFA World Cup + MLB, 23 sources (sportsbooks + prediction markets), CC BY 4.0 |
+| [SharpAPI-R](https://github.com/Sharp-API/SharpAPI-R) | R client, CRAN submission in progress |
 
 ## Data, if you just want data
 
-The [sample dataset](https://github.com/Sharp-API/sports-odds-sample-data) is free under
+The [sample dataset](https://github.com/Sharp-API/SharpAPI-Sample-Data) is free under
 CC BY 4.0: real multi-book odds snapshots ready for pandas or R, with a citation block for
 research use. The live feed behind it starts at $0: [get a free API key](https://sharpapi.io/pricing),
 no credit card required.
