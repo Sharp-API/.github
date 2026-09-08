@@ -40,7 +40,8 @@ client = SharpAPI("sk_live_...")  # free key at sharpapi.io
 evs = client.ev.get(min_ev=3.0, sport="basketball")
 ```
 
-One `GET /odds` call returns every book's price on every market in one schema. The API also
+`GET /odds` returns paginated odds across supported sportsbooks and markets in one
+schema. The API also
 serves pre-computed opportunities: `/opportunities/ev` (Pinnacle no-vig reference),
 `/opportunities/arbitrage`, and `/opportunities/middles`, plus player props, game state,
 and historical odds with closing lines.
