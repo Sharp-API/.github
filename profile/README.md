@@ -55,7 +55,7 @@ and historical odds with closing lines.
 | [SharpAPI-Sample-Data](https://github.com/Sharp-API/SharpAPI-Sample-Data) | Free odds dataset: 2026 FIFA World Cup + MLB, 23 sources (sportsbooks + prediction markets), CC BY 4.0 |
 | [SharpAPI-R](https://github.com/Sharp-API/SharpAPI-R) | R client, CRAN submission in progress |
 
-## Data, if you just want data
+## Sample datasets
 
 The [sample dataset](https://github.com/Sharp-API/SharpAPI-Sample-Data) is free under
 CC BY 4.0: real multi-book odds snapshots ready for pandas or R, with a citation block for
