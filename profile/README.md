@@ -61,7 +61,7 @@ and historical odds with closing lines.
 | [SharpAPI-Python](https://github.com/Sharp-API/SharpAPI-Python) | Python SDK · `pip install sharpapi` |
 | [SharpAPI-TS](https://github.com/Sharp-API/SharpAPI-TS) | TypeScript / JavaScript SDK · `@sharp-api/client` |
 | [SharpAPI-MCP](https://github.com/Sharp-API/SharpAPI-MCP) | MCP server for compatible AI applications |
-| [SharpAPI-R](https://github.com/Sharp-API/SharpAPI-R) | R client · submitted to CRAN, review pending |
+| [SharpAPI-R](https://github.com/Sharp-API/SharpAPI-R) | R client · available via r-universe |
 | [SharpAPI-Sample-Data](https://github.com/Sharp-API/SharpAPI-Sample-Data) | World Cup and MLB odds samples · CC BY 4.0 |
 
 [API reference and guides](https://docs.sharpapi.io) · Available in English, German, Spanish, and Brazilian Portuguese.
