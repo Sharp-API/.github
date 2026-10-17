@@ -1,0 +1,18 @@
+no_progress = true
+timeout = 20
+max_retries = 2
+retry_wait_time = 2
+max_concurrency = 4
+max_redirects = 5
+
+# GitHub Actions run 34239183987 returned 403 for these two browser pages even
+# though both passed locally. Keep these exceptions limited to the exact URLs;
+# other failures (including 403/429 responses) must still fail validation.
+# Check the npm package's existence through its public registry API instead.
+remap = [
+  '^https://www\.npmjs\.com/package/@sharp-api/client$ https://registry.npmjs.org/@sharp-api%2Fclient',
+]
+
+# X blocks automated datacenter requests. Verify this profile manually when
+# changing the account link; no other X URL is excluded.
+exclude = ['^https://x\.com/Sharp_API$']
